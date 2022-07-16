@@ -21,5 +21,13 @@ public TrackCoach(FortuneService theFortuneService) {
 		return fortuneService.getFortune();
 
 	}
-
+	
+	//add an init method
+	public void doMyStartupStuff() {
+		System.out.println("Track Coach: init method");
+	}
+	//add a destroy method
+	public void doMyCleanupStuff() {
+		System.out.println("Track Coach: destroy method");
+	}
 }
